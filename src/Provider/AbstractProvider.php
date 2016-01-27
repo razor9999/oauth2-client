@@ -342,7 +342,7 @@ abstract class AbstractProvider
             'approval_prompt' => $options['approval_prompt'],
         ];
 
-        if (empty($options['lang'])) {
+        if (!empty($options['lang'])) {
             $return['lang'] =$options['lang'];
         }
 
